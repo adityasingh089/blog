@@ -1,24 +1,50 @@
 <!DOCTYPE html>
-{% load static %}
 <html lang="en" dir="ltr">
 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cryptography</title>
+</head>
 <body>
   {% include "polls/navbar.html" %}
-<br><br>
-<div class="alert alert-warning" role="alert">
-  <center><h1>cryptography</h1></center>
-</div>
+  <br><br><br>
+  <div class="container">
+    <div class="alert alert-primary" role="alert">
+      <h1 class="text-center heading-gap ">Cryptography</h1>
+    </div>
 
+    <div class="content">
+      <p>
+        Cryptography is the study and practice of techniques for secure communication in the presence of third parties. It involves creating and analyzing protocols that prevent adversaries from gaining access to private information.
+      </p>
 
+      <h3>Key Concepts:</h3>
+      <ul>
+        <li><strong>Confidentiality:</strong> Ensures only authorized parties can access information.</li>
+        <li><strong>Integrity:</strong> Verifies data hasn't been tampered with.</li>
+        <li><strong>Authentication:</strong> Verifies the identity of communicating parties.</li>
+        <li><strong>Non-repudiation:</strong> Prevents denying the origin of a message.</li>
+        <li><strong>Key Management:</strong> Securely manages cryptographic keys.</li>
+      </ul>
 
+      <h3>Types of Cryptography:</h3>
+      <ul>
+        <li><strong>Symmetric Cryptography:</strong> Uses a single key for encryption and decryption (e.g., AES).</li>
+        <li><strong>Asymmetric Cryptography:</strong> Uses a pair of keys for encryption and decryption (e.g., RSA).</li>
+        <li><strong>Hash Functions:</strong> Ensure data integrity and create digital signatures (e.g., SHA-256).</li>
+      </ul>
 
+      <h3>Applications:</h3>
+      <ul>
+        <li>Secure Communication: Used in messaging apps, email encryption, VPNs, and secure web browsing (HTTPS).</li>
+        <li>Data Protection: Secures data at rest and data in transit.</li>
+        <li>Authentication and Access Control: Plays a role in user authentication and access control mechanisms.</li>
+      </ul>
+    </div>
 
-
-
-
-
-
-  {% include "polls/footer.html" %}
+    {% include "polls/footer.html" %}
+  </div>
 
 </body>
 

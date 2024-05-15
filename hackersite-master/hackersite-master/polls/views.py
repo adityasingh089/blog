@@ -45,6 +45,10 @@ def cryptography_view(request):
     return  render(request,'polls/cryptography.html')
 def cloudsecurity_view(request):
     return  render(request,'polls/cloudsecurity.html')
+def socialengineering_view(request):
+    return  render(request,'polls/socialengineering.html')
+def ransomware_view(request):
+    return  render(request,'polls/ransomware.html')
 
 
 @login_required(login_url='customerlogin')

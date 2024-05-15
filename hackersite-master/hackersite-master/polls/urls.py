@@ -21,6 +21,8 @@ urlpatterns = [
     path('digitalforensic', views.digitalforensic_view),
     path('cryptography', views.cryptography_view),
     path('cloudsecurity', views.cloudsecurity_view),
+    path('socialengineering', views.socialengineering_view),
+    path('ransomware', views.ransomware_view),
     path('price', views.price_view),
     path('t&c',views.tandc_view,name='t&c'),
 

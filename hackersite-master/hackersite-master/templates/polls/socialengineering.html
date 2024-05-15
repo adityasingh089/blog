@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+<script src="{% static 'js/script.js' %}"></script>
+
+<body>
+    {% include "polls/navbar.html" %}
+    <br><br><br>
+    <div class="alert alert-primary" role="alert">
+        <center><h1>Social Engineering</h1></center>
+      </div>
+    <p>
+     <!-- <h3> Social Engineering :</h3></span>  -->
+        The art of manipulating people into performing actions or divulging confidential information, often for
+        malicious purposes. Unlike hacking, which typically involves exploiting technical vulnerabilities, social
+        engineering exploits human psychology and trust to gain unauthorized access to systems, data, or physical
+        spaces.
+
+        Digital forensics is the process of identifying, preserving, analyzing, and documenting digital evidence. This
+        is done in order to present evidence in a court of law when required.</p>
+
+    <center>
+        <h3>There are various techniques of social engineering, including:
+        </h3>
+    </center>
+
+    <!-- <div class="row row-cols-1 row-cols-md-2 g-4">
+  <div class="col">
+    <div class="card">
+      <img src=" static/image/id.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">1. Identification</h5>
+        <p class="card-text">First, find the evidence, noting where it is stored.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="static/image/dp.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">2. Preservation</h5>
+        <p class="card-text"> Next, isolate, secure, and preserve the data. This includes preventing people from possibly tampering with the evidence.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="static/image/Analysis.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">3. Analysis</h5>
+        <p class="card-text">Next, reconstruct fragments of data and draw conclusions based on the evidence found.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="static/image/doc.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">4. Documentation</h5>
+        <p class="card-text">Following that, create a record of all the data to recreate the crime scene.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="static/image/Presentation.jpg" class="card-img-top" alt="..." >
+      <div class="card-body">
+        <h5 class="card-title">5. Presentation</h5>
+        <p class="card-text">Lastly, summarize and draw a conclusion.</p>
+      </div>
+    </div>
+  </div> -->
+
+    <div class="row">
+        <!-- <div class="col-4">
+    <div class="list-group" id="list-tab" role="tablist">
+      <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">Phase I – First Response</a>
+      <a class="list-group-item list-group-item-action " id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">Phase II – Search and Seizure</a>
+      <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">Phase III – Collect the Evidence</a>
+      <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">Phase IV- Secure the Evidence</a>
+    </div>
+  </div> -->
+        <div class="col-8">
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                    The action performed right after the occurrence of a security incident is known as the first
+                    response. It is highly dependent on the nature of the incident.</div>
+                <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">Under
+                    this phase, the professionals search for the devices involved in carrying out the crime. These
+                    devices then carefully seized to extract information out of them.</div>
+                <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">After
+                    the search and seizure phase, professionals use the acquired devices to collect data. They have
+                    well-defined forensic methods for evidence handling.</div>
+                <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">The
+                    forensic staff should have access to a safe environment where they can secure the evidence. They
+                    determine if the collected data is accurate, authentic, and accessible.</div>
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+
+
+
+
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    <span>
+                        <h4> Phishing: </h4>
+                    </span>
+                </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Sending fraudulent emails, text messages, or other forms of communication
+                    that appear to be from a legitimate source, aiming to trick recipients into revealing sensitive
+                    information like passwords or financial details. <br> Phishing is a form of cyber attack in which the attacker impersonates a legitimate entity or organization to trick individuals into providing sensitive information such as login credentials, financial data, or personal details. Phishing attacks are typically carried out via email, although they can also occur through other communication channels such as text messages, social media, or instant messaging platforms. </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    <span>
+                        <h4> Pretexting: </h4>
+                    </span>
+                </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Creating a fabricated scenario to obtain personal information from
+                    individuals. For example, a pretexter might pose as a bank representative and call someone to
+                    request account information under the guise of a security check.</div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    <span>
+                        <h4>Baiting:</h4>
+                    </span>
+                </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"> Offering something enticing, like a free USB drive or software download,
+                    which contains malware or malicious code. When the victim interacts with the bait, their system gets
+                    compromised.</div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    <span>
+                        <h4>Tailgating:</h4>
+                    </span>
+                </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"> Physically following someone into a restricted area without proper authorization, often by pretending to be an employee or someone who belongs there.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    <span>
+                        <h4>Quid pro quo:</h4>
+                    </span>
+                </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"> Offering a favor or service in exchange for sensitive information or access. For instance, a social engineer might offer IT support in exchange for login credentials.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button> -->
+
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+        <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <img src="..." class="rounded me-2" alt="...">
+                <strong class="me-auto">Bootstrap</strong>
+                <small>11 mins ago</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Hello, world! This is a toast message.
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="{% static 'js/script.js' %}"></script>
+    {% include "polls/footer.html" %}
+
+</body>
+
+</html>
